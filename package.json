@@ -15,7 +15,9 @@
     "validator": "^4.5.0",
     "waterline": "^0.10.30"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
