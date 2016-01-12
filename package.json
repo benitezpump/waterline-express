@@ -1,0 +1,32 @@
+{
+  "name": "waterline-express",
+  "version": "1.0.0",
+  "description": "waterline orm + express",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "sails-mysql": "^0.11.2",
+    "sails-sqlserver": "^0.10.8",
+    "serve-favicon": "^2.3.0",
+    "waterline": "^0.10.30"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benitezpump/waterline-express.git"
+  },
+  "keywords": [
+    "express",
+    "waterline",
+    "orm"
+  ],
+  "author": "benitezpump",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benitezpump/waterline-express/issues"
+  },
+  "homepage": "https://github.com/benitezpump/waterline-express#readme"
+}
