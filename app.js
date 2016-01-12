@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, '.tmp')));
 //load routes
 app.use('/', index);
 //-: service REST API
-app.use('/api', user);
+app.use('/api', user(app));
 //load models
 orm.loadCollection(User);
 
