@@ -1,12 +1,12 @@
-var Waterline = require('waterline');
-var config = require('../config/models');
+import  Waterline from 'waterline';
+import config from '../config/models';
 
-module.exports = Waterline.Collection.extend({
+export default Waterline.Collection.extend({
     tableName: 'user',
     connection: config.connection,
     migrate: config.migrate,
     attributes: {
         user: 'string',
         password: 'string'
-    }   
+    }
 });

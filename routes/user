@@ -1,0 +1,23 @@
+import express from 'express';
+let router = express.Router();
+
+export default  (app) => {
+
+    router.get('/user', (req, res, next) => {
+        app.models.user.find().then((model) => {
+            return res.json(model);
+        }).catch((err) =>{
+            return res.json({ err: err }, 500);
+        });
+    });
+
+    router.post('/user', (req, res, next) => {
+        app.models.user.create(req.body).then((model) =>{
+            return res.json({menssage:'user created successful'});
+        }).catch((err) =>{
+            return res.json({ err: err }, 500);
+        });
+    });
+
+    return router;
+};
